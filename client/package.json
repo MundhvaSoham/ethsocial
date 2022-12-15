@@ -1,0 +1,35 @@
+{
+  "name": "public",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run browser",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -t [ babelify --presets [ react ] ] index.js -o public/dist/bundle.js",
+    "browser": "browser-sync start --server --files 'public/assets/**/*' --ss public/",
+    "ipfs-deploy": "ipfs add -r public/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "history": "^4.6.1",
+    "ipfs": "^0.24.1",
+    "ipfs-api": "^14.0.3",
+    "moment": "^2.18.1",
+    "react": "^15.5.4",
+    "react-datetime": "^2.8.10",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "truffle-contract": "^3.0.0",
+    "web3-detect-network": "0.0.4"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "standard": "^10.0.3",
+    "watchify": "^3.9.0"
+  }
+}

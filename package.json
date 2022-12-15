@@ -1,0 +1,33 @@
+{
+  "name": "eth.social",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "testrpc": "testrpc --account=100",
+    "deploy:testrpc": "truffle migrate --reset --network=development",
+    "deploy:rinkeby": "truffle migrate --reset --network=rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coincircle/eth.social.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coincircle/eth.social/issues"
+  },
+  "homepage": "https://github.com/coincircle/eth.social#readme",
+  "devDependencies": {
+    "truffle-hdwallet-provider": "git+https://github.com/miguelmota/truffle-hdwallet-provider.git",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "ethereum-input-data-decoder": "0.0.2",
+    "moment": "^2.18.1"
+  }
+}

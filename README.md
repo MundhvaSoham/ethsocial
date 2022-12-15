@@ -74,3 +74,7 @@ Test smart contracts
 ```bash
 truffle test
 ```
+
+# License
+
+MIT
